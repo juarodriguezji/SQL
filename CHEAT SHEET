@@ -1,0 +1,32 @@
+INTRODUCCION A LOS QUERIES:
+
+TIPOS DE QUERIES:
+Se clasifican por su función
+
+*DDL: Data Definition Language* 
+Create : Crear una tabla
+Alter : Alterar ( Añadir , borrar o modificar ) una tabla creada
+Truncate: Eliminar files de una tabla
+DELETE FROM y TRUNCATE TABLE es que a primera elimina los registros pero si la tabla tiene algún indice autoincremental este se mantiene en el ultimo asignado y en truncate table ademas de eliminar todos los registros inicializa el indice autoincremental.
+Rename : Renombrar la tabla
+
+*DML: Data Manipulating language*
+
+Procedural DMLs : require a user to specify what data are needed and how to get those data.
+Declarative DMLs (also referred as Non-procedural DMLs) : require a user to specify what data are needed without specifying how to get those data. 
+
+Insert :  nueva fila
+Delete : Borrar
+Update : Cambia una columna particular 
+
+*DQL: Data Query Language*
+Select: Traer/ seleccionar datos
+Select distinct : Traer datos seleccionados distintos.
+
+*TCL: Transaction Control Language*
+Impactant  las funciones DML
+Commit : Cambios permanentes en la DB
+Rollback: Devolver la DB a lo ultimo guardado
+Savepoint: Cambios temporales
+
+*DCL: Data Control Language*
