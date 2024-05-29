@@ -1,0 +1,4 @@
+SELECT (Traer datos correctos )+
+*  significa todo
+FROM = De que tabla SELECT * FROM Candidates : selecciona todo
+ATRIBUTOS SEPARADOS POR COMA : SELECT Name, phone FROM CANDIDATE , selecciona atributos nombre y telefono de la tabla candidato
