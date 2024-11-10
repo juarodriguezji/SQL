@@ -1,0 +1,16 @@
+ESTE ES MI PROYECTO FINAL DE SQL INTERMEDIO , CON WHERE, FROM ,SELECT 
+-- Select fields from cities
+SELECT name,country_code,city_proper_pop,metroarea_pop,city_proper_pop / metroarea_pop * 100 AS city_perc  
+-- LO DE CITYPERC ES una medida calculada 
+FROM cities
+-- Use subquery to filter city name
+WHERE name IN
+   (SELECT capital
+    FROM countries
+    WHERE continent = 'Europe' OR continent LIKE '%America')
+-- Add filter condition such that metroarea_pop does not have null values
+AND metroarea_pop IS NOT NULL
+--- LO DE Arriba es ya que se filtraron ya las cosas  y las clausulas where se usan sobre otra tabla solamente , y arriba en el cities ya la habiamos convocado.
+-- Sort and limit the result
+ORDER BY city_perc DESC
+LIMIT 10;
